@@ -3,5 +3,6 @@
 {{#each model.questions as |question|}}
 
     {{question-tile question=question}}
+    {{update-question question=question update="update"}}
 
 {{/each}}
