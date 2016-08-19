@@ -1,4 +1,9 @@
 <h4>{{model.text}}</h4>
 <p>{{model.author}}</p>
 
-{{new-answer saveAnswer="saveAnswer" answer=model}}
+<h3>Answers</h3>
+{{#each model.answers as |answer|}}
+   {{answer-tile answer=answer}}
+{{/each}}
+
+{{new-answer saveAnswer="saveAnswer" question=model}}
