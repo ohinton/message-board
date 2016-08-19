@@ -1,21 +1,19 @@
 {{#if updateQuestionForm}}
   <form id="edit-question-form">
     <div class="form-group">
-        <label for="text">Edit this question:</label>
-        {{input value=text id="text" class="form-control" placeholder=question.text}}
-      </div>
-      <div class="form-group">
-        <label for="author">Edit author:</label>
-        {{input value=author id="author" class="form-control" placeholder=question.author}}
-      </div>
-
-      <div class="form-group">
-        <label for="notes">Edit notes:</label>
-        {{textarea value=notes id="notes" class="form-control" placeholder=question.notes}}
-      </div>
-
+      <label for="text">Edit this question:</label>
+      {{input value=text id="text" class="form-control" placeholder=question.text}}
+    </div>
+    <div class="form-group">
+      <label for="author">Edit author:</label>
+      {{input value=author id="author" class="form-control" placeholder=question.author}}
+    </div>
+    <div class="form-group">
+      <label for="notes">Edit notes:</label>
+      {{textarea value=notes id="notes" class="form-control" placeholder=question.notes}}
+    </div>
       <button class="btn btn-success" {{action 'update' question}}>Save</button>
   </form>
 {{else}}
-  <button class="btn btn-xs btn-default" {{action 'showUpdateQuestionForm'}}>edit</button>
+<button class="btn btn-xs btn-default" {{action 'showUpdateQuestionForm'}}>edit</button>
 {{/if}}
