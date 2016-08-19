@@ -1,9 +1,19 @@
-<h4>{{model.text}}</h4>
-<p>{{model.author}}</p>
+<div class="jumbotron">
+  <div id="question-detail" class="container">
+    <h1>{{model.text}}</h1>
+    <p>Asked by: {{model.author}}</p>
+    <p>Additional notes: {{model.notes}}</p>
+    {{new-answer saveAnswer="saveAnswer" question=model}}
+  </div>
+</div>
 
-<h3>Answers</h3>
-{{#each model.answers as |answer|}}
-   {{answer-tile answer=answer}}
-{{/each}}
-
-{{new-answer saveAnswer="saveAnswer" question=model}}
+<div class="container">
+  <div id="answer-title">
+    {{#if model.answers}}
+      <h1>Answers</h1>
+    {{/if}}
+  </div>
+    {{#each model.answers as |answer|}}
+      {{answer-tile answer=answer}}
+    {{/each}}
+</div>

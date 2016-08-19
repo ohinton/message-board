@@ -1,8 +1,23 @@
-{{new-question save="save" question=question}}
+<div class="jumbotron">
+  <div class="container">
+    <div class="tagline">
+      <h2>Got a question?</h2>
+      <h2>You've come to the right place!</h2>
+    </div>
+    {{new-question save="save" question=question}}
+  </div>
+</div>
 
-{{#each model.questions as |question|}}
-
-    {{question-tile question=question}}
-    {{update-question question=question update="update"}}
-
-{{/each}}
+<div class="container">
+  <div class="tagline">
+    <h2>Got all the answers?</h2>
+    <h2>Help answer these questions!</h2>
+  </div>
+  <div id="question-list">
+    {{#each model.questions as |question|}}
+      {{question-tile question=question}}
+      {{update-question question=question update="update"}}
+      <hr>
+    {{/each}}
+  </div>
+</div>
