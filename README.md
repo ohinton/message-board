@@ -1,7 +1,8 @@
-# Message-board
+# 💬 Q&A Message Board
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+By Olivia Hinton | Date: August 19, 2016
+
+This handy Ember app is a question and answer message board where a user submits a question and other users can respond with answers.
 
 ## Prerequisites
 
@@ -15,7 +16,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/ohinton/message-board.git` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
@@ -39,15 +40,15 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
+### Tech Used
 
-Specify what it takes to deploy your app.
+* Ember
+* Bootstrap
+* SASS
+* HTML
 
-## Further Reading / Useful Links
+### License
 
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+*This software is licensed under the MIT license.*
 
+Copyright (c) 2016 **Olivia Hinton**
