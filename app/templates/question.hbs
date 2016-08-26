@@ -1,8 +1,8 @@
 <div class="jumbotron">
   <div id="question-detail" class="container">
     <h1>{{model.text}}</h1>
-    <p>Asked by: {{model.author}}</p>
-    <p>Additional notes: {{model.notes}}</p>
+    <p>submitted by {{model.author}}</p>
+    <p>notes: {{model.notes}}</p>
     {{new-answer saveAnswer="saveAnswer" question=model}}
   </div>
 </div>
