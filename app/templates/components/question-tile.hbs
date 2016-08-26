@@ -1,4 +1,4 @@
 <button class="btn btn-xs btn-success" {{action 'addToFaves' question}}>favorite</button>
 {{#link-to 'question' question.id}}<h4>{{question.text}}</h4>{{/link-to}}
-<p>submitted by {{question.author}}</p>
+<p>submitted by {{question.author}} {{formattedDate}}</p>
 <p id="answer-total">{{question-popularity question}} {{answerTotal}} answers</p>
