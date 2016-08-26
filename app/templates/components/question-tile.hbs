@@ -1,3 +1,4 @@
 {{#link-to 'question' question.id}}<h4>{{question.text}}</h4>{{/link-to}}
 <p>submitted by {{question.author}}</p>
-<p id="answer-total">{{answerTotal}} answers</p>
+{{question-popularity question}} <p id="answer-total">{{answerTotal}} answers</p>
+<button class="btn btn-xs btn-success" {{action 'addToFaves' answer}}>Add to Faves</button>
